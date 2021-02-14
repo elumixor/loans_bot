@@ -1,13 +1,13 @@
 const express = require("express");
-const index = express();
+const app = express();
 
-index.get("/", (request, response) => {
+app.get("/", (request, response) => {
     response.send("Hello world");
 });
 
 
 let port = process.env.port || 3000;
-index.listen(port, () => {
+app.listen(port, () => {
     console.log("Hello world");
 });
 
