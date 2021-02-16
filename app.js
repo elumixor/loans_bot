@@ -6,8 +6,8 @@ app.get("/", (request, response) => {
 });
 
 
-let port = process.env.port || 3000;
+let port = process.env.port || 8081;
 app.listen(port, () => {
-    console.log("Hello world");
+    console.log("Hello world. Port = " + port);
 });
 
